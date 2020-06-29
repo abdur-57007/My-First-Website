@@ -1,12 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     
+    <title>Facebook</title>
+<style>
+
+    body {
+        background: #E0E4EE;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background: #405D9B;
+        height: 90px;
+        width: 100%;
+
+    }
+
+    .header-left {
+        font-size: 40px;
+        position: absolute;
+        top: 3%; 
+        left: 170px;
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+    
+    }
+
+    .header-right-email {
+        position: absolute;
+        right: 490px;
+        top: 12px;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: white;
+    }
+
+    .header-right-password {
+        position: absolute;
+        right: 360px;
+        top: 12px;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: white;
+    }
+
+    .header-right {
+        position: absolute;
+        right: 90px;
+        top: 36px;
+    }
+    .header-right-input-email {
+        width: 150px;
+        height: 25px;
+        border: .5px solid black;
+    }
+
+    .header-right-input-password {
+        width: 150px;
+        height: 25px;
+        border: .5px solid black;
+        margin-left:5px ;
+        
+     }
+
+     .header-right-input-submit {
+         height: 25px;
+         background: #21b5bc;
+         color: white;
+         border: none;
+         cursor: pointer;
+
+     }
+     .header-right-input-submit:hover {
+         height: 25px;
+         background: #3A5B9B;
+         color: white;
+         border: none;
+         cursor: pointer;
+
+     }
+     .forgotten {
+         color: white;
+         text-decoration: none;
+         position: relative;
+         top: 22px;
+         left: -210px;
+         font-size: 14px;
+         font-family: Helvetica, Arial,  sans-serif;
+         margin-bottom: 10px ;
+         text-decoration: underline;
+
+     }
+    
+     .forgotten:hover {
+        text-decoration: underline;
+     }
+
+     .left {
+        width: 55%;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        margin-bottom: 20px;
+
+
+     }
+     .body-left {
+         font-size: 20px;
+         width: 200px;
+         font-family: Helvetica, Arial, sans-serif;
+         color: #133c62;
+         
+     }
+
+     img {
+         margin: 120px 0px 0px 120px;
+
+     }
+
+     .right {
+         width: 45%;
+         position: absolute;
+         top: 16%;
+         left: 56%;
+     }
+
+
+     .span-1 {
+         font-family:  Helvetica,  Arial, sans-serif;
+         color: #373737;
+         font-size: 40px;
+
+     }
+
+     .span-2 {
+
+        font-family:  Helvetica,  Arial, sans-serif;
+         color: #373737;
+         font-size: 20px;
+     }
+
+     .input-first {
+         height: 30px;
+         width: 180px;
+         border-radius: 5px;
+         border: 1px solid grey;
+         font-size: 20px;
+        
+
+     }
+
+     .input-email {
+        height: 30px;
+         width: 372px;
+         border-radius: 5px;
+         border: 1px solid grey;
+         font-size: 20px;
+      
+     }
+
+     .password {
+        height: 30px;
+         width: 372px;
+         border-radius: 5px;
+         border: 1px solid grey;
+         font-size: 20px;
+     }
+
+     .Birthday {
+         font-size: 18px;
+         font-family: Helvetica, Arial, sans-serif;
+         color: #3C3033;
+         
+
+     }
+
+     select {
+         height: 30px;
+         width: 55px;
+         padding: 6px ;
+         border-radius: 5px;
+         border: 1px solid grey;
+         margin-right: 20px;
+     }
+
+     a {
+         text-decoration: underline;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 12px;
+     }
+
+     .sign-up {
+         height: 36px;
+         width: 120px;
+         color: white;
+         background: #609421;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+     }
+
+     
+     .sign-up: :hover {
+         height: 36px;
+         width: 120px;
+         color: white;
+         background: #78B763;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+     }
+
+     .agri {
+         font-family: Helvetica, Arial, sans-serif;
+         font-size: 10px;
+         color: grey;
+        
+
+     }
+
+     .new {
+         margin-right: 280px;
+     }
+
+     .gender {
+         font-family: Helvetica, Arial, sans-serif;
+         font-size: 20px;
+         margin-right: 10px;
+         
+     }
+
+     .final {
+         font-family: Helvetica, Arial, sans-serif;
+         font-size: 20px;
+         text-decoration: none;
+         cursor: pointer;
+               
+     }
+
+     
+     .final:hover {
+         
+        text-decoration: underline;
+     }
+
+</style>
 </head>
 <body>
-    <h1>my first website</h1>
-    <h3>Look mama! I can push github :)</h3>
+    <div class="header">
+        <span class="header-left"> <b> facebook </b> </span>
+        <span class="header-right-email">Email of Phone</span>
+        <span class="header-right-password">Password</span>
+    </div>
+
+    <div class="header-right">
+        <input type="text" class="header-right-input-email">
+        <input type="password" class="header-right-input-password">
+        <input type="submit" value="Log in" class="header-right-input-submit">
+        <a href="#" class="forgotten">Forgotten account</a>
+    </div>
+    <div class="left">
+        <span class="body-left">Facebook helps you connect and share with the <br> people in your life.</span>
+    </div>
+    <img src="image-01.png">
+
+    <div class="right">
+        <span class="span-1"> <b> Create an Account </b></span> <br>
+        <span class="span-2">It's quick and easy.</span>
+        <br><br>
+        <input type="text" class="input-first" placeholder="First Name">
+        <input type="text" placeholder="Surename" class="input-first"><br><br>
+        <input type="number" placeholder="Enter Your Email or Mobile Number" class="input-email" ><br><br>
+        <input type="password" placeholder="New Password" class="password">
+        <br><br>
+        <span class="Birthday">Birthday</span><br>
+        <select>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+        </select>
+        <select style="width: 100px;">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>Onctober</option>
+            <option>Novemnber</option>
+            <option>December</option>
+        </select>
+        <select style="width: 80px;">
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+            <option>1990</option>
+        </select>
+        <span><a href="#"> Why do I need to provide my  birth date?</a></span><br><br>
+        <div class="gender">
+        <input  type="radio" name="gander" value="Male"> Male 
+        <input class="gender" type="radio" name="gander" value="Female">Female 
+        <input class="gender" type="radio" name="gander" value="Hijra">Hijra 
+        </div>
+        <br><br>
+        <div class="new">
+        <span class="agri">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</span>
+        </div>
+        <br><br>
+        <input type="Submit" value="sign up" class="sign-up">
+        <br><br>
+        <div class="final">
+            <span> <a href="#" class="final"> Create a Page </a> for a celebrity, band or business.</span>
+        </div>
+    </div>
 </body>
 </html>
